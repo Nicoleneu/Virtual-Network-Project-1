@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-Enter the playbook file: [https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Config_and_Playbook_Files/filebeat-configuration.yml]
+Enter the playbook file: [Playbook File](https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Config_and_Playbook_Files/filebeat-configuration.yml)
 
 This document contains the following details:
 - Description of the Topology
