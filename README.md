@@ -98,7 +98,7 @@ In 3-5 bullets, explain the steps of the ELK installation play:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-[/Users/nickyneu/Virtual-Network-Project-1/Docker-Image/docker ps.jpg]
+[https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Docker-Image/docker%20ps.jpg]
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
