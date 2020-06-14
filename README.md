@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - TODO: Enter the playbook file.
+Enter the playbook file.
           - filebeat-playbook.yml
 
 This document contains the following details:
@@ -28,22 +28,22 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly stable, in addition to restricting traffic to the network.
 - What aspect of security do load balancers protect? 
 
-        Load balancers' primary function it so spread workloads across multiple servers within a layered security model. Load balancers prevent overloading servers and optimzie productivity. Additionally, they add resiliency to a network by rerouting traffic between servers if one server should fall prey to an attack. Because load balancers have health probes they are able to make sure a server is running properly before sending traffic to it, if a server is not running properly due to a DDoS attack, the load balancer will send the traffic to a functioning server. This helps to reduce the attack surface, eliminate single points of failure, and makes it more difficult for attackers to exhaust a network's resources. 
+        -Load balancers' primary function it so spread workloads across multiple servers within a layered security model. Load balancers prevent overloading servers and optimzie productivity. Additionally, they add resiliency to a network by rerouting traffic between servers if one server should fall prey to an attack. Because load balancers have health probes they are able to make sure a server is running properly before sending traffic to it, if a server is not running properly due to a DDoS attack, the load balancer will send the traffic to a functioning server. This helps to reduce the attack surface, eliminate single points of failure, and makes it more difficult for attackers to exhaust a network's resources. 
 
 - What is the advantage of a jump box?
 
-        A jump box is very similar to a gateway router. The jump box is exposed to the public internet and can be accessed via port 22 though an SSH connection. The jump box sits in front of other machines that are not exposed to the public internet, and is able to control access to these machines by allowing connections from specific IP addresses to them. This is a way that the jump box helps improve security.
+        -A jump box is very similar to a gateway router. The jump box is exposed to the public internet and can be accessed via port 22 though an SSH connection. The jump box sits in front of other machines that are not exposed to the public internet, and is able to control access to these machines by allowing connections from specific IP addresses to them. This is a way that the jump box helps improve security.
 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system configuration.
 
 - What does Filebeat watch for?
 
-        Filebeat logs information about the file system and sends this information to Logstach and Elasticsearch. Filebeat is used to collect data about specific files and changes made to them on remote machines. 
+        -Filebeat logs information about the file system and sends this information to Logstach and Elasticsearch. Filebeat is used to collect data about specific files and changes made to them on remote machines. 
 
 - What does Metricbeat record?
 
-        Metricbeat can be installed on servers to routinely collect metrics from the operating system and services running on the server. Metricbeat then takes the stats and metrics it gathered, and sends them to an output like Elasticsearch or Logstach. 
+        -Metricbeat can be installed on servers to routinely collect metrics from the operating system and services running on the server. Metricbeat then takes the stats and metrics it gathered, and sends them to an output like Elasticsearch or Logstach. 
 
 The configuration details of each machine may be found below.
 
@@ -64,7 +64,7 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 Machines within the network can only be accessed by ssh connection through the ansible container.
 - Which machine did you allow to access your ELK VM? What was its IP address?
 
-        My ELK VM can be accessed after SSH into the Jump-Box-Provisioner VM and then opening up and attaching to the ansible container. From the ansible container, you can then SSH into the ELK VM using the IP address 10.1.0.4. The IP address of the Jump-Box-Provisioner is 10.0.0.4. 
+        -My ELK VM can be accessed after SSH into the Jump-Box-Provisioner VM and then opening up and attaching to the ansible container. From the ansible container, you can then SSH into the ELK VM using the IP address 10.1.0.4. The IP address of the Jump-Box-Provisioner is 10.0.0.4. 
 
 A summary of the access policies in place can be found in the table below.
 
@@ -80,7 +80,7 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - What is the main advantage of automating configuration with Ansible?
 
-      One of the main advantages of automating configurations with Ansible is that Ansible uses a simple syntax written in YAML called playbooks. These playbooks can be written to automate storage, servers, and networking. These manual tasks can be difficult to repeat, so using Ansible to configure these components makes the tasks easier to complete and less vulnerable to error. 
+      -One of the main advantages of automating configurations with Ansible is that Ansible uses a simple syntax written in YAML called playbooks. These playbooks can be written to automate storage, servers, and networking. These manual tasks can be difficult to repeat, so using Ansible to configure these components makes the tasks easier to complete and less vulnerable to error. 
 
 The playbook implements the following tasks:
 
@@ -111,8 +111,8 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-      Filebeat is an agent installed on your server that monitors the log files and their specific locations, collects log events, and forwards this information to Elasticsearch or Logstash.
-      system.log is an example of something I would expect to see filebeats collecting.  
+      -Filebeat is an agent installed on your server that monitors the log files and their specific locations, collects log events, and forwards this information to Elasticsearch or Logstash.
+      -system.log is an example of something I would expect to see filebeats collecting.  
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
