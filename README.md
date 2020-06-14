@@ -125,4 +125,4 @@ SSH into the control node and follow the steps below:
 
 The following screen shot displays the results of filebeat correctly installed on the ELK server. This displays the Kibana site with graphs monitoring the 2 DVWA-VMs. 
 
-[/Users/nickyneu/Virtual-Network-Project-1/Filebeat-Image/filebeat-graphs.png]
+[/https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Filebeat-Image/filebeat-graphs.png]
