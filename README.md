@@ -5,7 +5,7 @@ Using Microsoft Azure I created a small stable virtual network. This network inc
 
 The files in this repository were used to configure the network depicted below.
 
-[https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Diagram/vnet-diagram.png]
+![Diagram/vnet-Diagram](https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Diagram/vnet-diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -98,7 +98,7 @@ In 3-5 bullets, explain the steps of the ELK installation play:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-[https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Docker-Image/docker%20ps.jpg]
+![Docker-Image/docker ps](https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Docker-Image/docker%20ps.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -125,4 +125,4 @@ SSH into the control node and follow the steps below:
 
 The following screen shot displays the results of filebeat correctly installed on the ELK server. This displays the Kibana site with graphs monitoring the 2 DVWA-VMs. 
 
-[/https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Filebeat-Image/filebeat-graphs.png]
+![Filebeat-Image/filebeat-graphs](/https://github.com/Nicoleneu/Virtual-Network-Project-1/blob/master/Filebeat-Image/filebeat-graphs.png)
